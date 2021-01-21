@@ -1,0 +1,64 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[12pt]{amsart}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[colorlinks=true,citecolor=red,linkcolor=blue]{hyperref}
+\usepackage[all]{hypcap}
+
+
+
+\setlength{\textwidth}{6.2in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+%%%%%Babylonian cuneiform
+\usepackage{pgffor, babyloniannum}
+\newcommand{\Bnum}[1]{{\LARGE \babyloniannum{#1}}}
+
+\begin{document}
+\title{Babylonian cuneiform}
+\author{Dave Richeson}
+
+\maketitle
+
+To create \href{http://en.wikipedia.org/wiki/Babylonian_numerals}{Babylonian cuneiform numerals} you must download the babyloniannum package at 
+
+\href{http://www.ctan.org/tex-archive/macros/xetex/latex/babyloniannum}{http://www.ctan.org/tex-archive/macros/xetex/latex/babyloniannum}
+
+You must also download and install the Santakku font from 
+
+\href{http://www.hethport.uni-wuerzburg.de/cuneifont}{http://www.hethport.uni-wuerzburg.de/cuneifont}
+
+Recall that the numbers 1 through 59 are written additively using the symbols 
+
+\begin{center}
+\Bnum{1}=1 and\Bnum{10}=10.
+\end{center}
+
+For example 47 is written 
+
+\begin{center}
+\Bnum{47}
+\end{center}
+
+This package is extremely easy to use. To obtain the symbols above type
+
+\verb#\Bnum{47}#
+
+Larger numbers are written in base 60, and this package will do the decomposition for you. For example, 
+
+\[1234567890=1 \cdot 60^{5}+35 \cdot 60^{4}+15 \cdot 60^{3}+35 \cdot 60^{2}+31 \cdot 60^{1}+30 \cdot 60^{0}.\]
+
+and 
+
+\verb#\Bnum{1234567890}#
+
+produces 
+
+\begin{center}
+\Bnum{1234567890}
+\end{center}
+
+\end{document}
