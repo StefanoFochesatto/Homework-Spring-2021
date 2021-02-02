@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{hieroglf}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\IRats}{\ensuremath{\mathbb I}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+
+\doclabel{Math F316}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}% DATE READING SENTENCES ARE DUE GOES HERE
+
+
+%%%% Main document starts here.
+
+\begin{document}
+
+\section*{3.3-3.5}
+
+\begin{description}
+    %applied arithmetic and egyptian math
+\item[Enlightening summary \#1:] Continuing from the previous reading, Section 3.4 introduces us to 
+Hippocrates and the three problems of antiquity. The text recounts Hippocrates' misfortune and his later success,
+being one of the first to support himself from teaching mathematics. When Hippocrates arrived in Athens at the beginning of his 
+math/philosophy career the three problems of antiquity were at the attention of all geometers. The rest of the section discusses Hippocrates' attempts at these problems, 
+making significant progress on the duplication of the cube, and the squared circle. 
+ 
+\item[Enlightening summary \#2:] Section 3.5 starts with Hippias and the story of the sophists. The sophists where a group of traveling lecturers who were said to teach 
+students logic, and debate. They had many criticisms, to some the sophists taught people to be con artists, training cleverness rather than virtue. Hippias, the most successful
+among them was characterized in Plato's writing as being an arrogant, boastful, eccentric man with a wide breadth of knowledge and exceptional memory. What cements Hippias' legacy is his
+invention of the quadratrix. The construction of the quadratrix is given in the text, but to summarize, the quadratrix essentially provides a relationship between the length of an edge and any angle between 0 and 90 degrees. 
+The rest of the section discusses Plato's academy, emphasizing his importance in the field of mathematics even though he was primarily a philosopher. 
+
+\item[Interesting:] I thoroughly enjoyed the history in this section of reading. I thought that the section that talked about how the sophists taught cleverness instead of virtue
+really characterized them as grifters and con artists. Especially when Hippias brags about his Sicilian lecture tour, and his refusal to teach the youth in Sparta. The text also describes
+Plato's school as a religious brotherhood. It's unfortunate that at the time religious affiliation was the only way to attain legal recognition. Had there been some other way it's likely that the \textbf{christian} Justinian 
+would have let them continue. I wonder if that was the only reason for their religious affiliation? And if not, how would worship play a role in Plato's school? 
+ 
+
+\item[Confusing:] I wish the text would have elaborated on how Wantzel's algebraic criteria for the problems of antiquity were inspired and derived. Also the section that 
+talks about Hippocrates' "lune" attempt at the squaring the circle problem had me very confused with the algebra. Looking back it's because I kept confusing the segment $AC$ with two separate variables $A$ and $C$. Probably because
+I have my algebra hat on instead of my geometry hat.  
+
+
+\end{description}
+\end{document}

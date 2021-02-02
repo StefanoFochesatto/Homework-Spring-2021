@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{hieroglf}
+\usepackage{times,txfonts}
+\usepackage{graphicx}
+\usepackage{float}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\IRats}{\ensuremath{\mathbb I}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+
+\doclabel{Math F316}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}% DATE READING SENTENCES ARE DUE GOES HERE
+
+
+%%%% Main document starts here.
+
+\begin{document}
+
+\section*{4.3-4.5}
+
+\begin{description}
+\item[Enlightening summary \#1:]
+Section 4.3 picks up from last week's reading by providing an overview of books 7,8 and 9 from Euclid's Elements. Euclid began with defining several 
+ideas such as divisibility, prime numbers, and composite numbers. We are introduced to the Euclidean algorithm, which is used to find the greatest common divisor between two numbers and
+also find a linear combination representation. The rest of the chapter focuses on the numerous number theory propositions that come from primality, greatest common denominators and linear combinations. 
+With some of the most important results being the fundamental theorem of arithmetic and the infinity of primes. 
+ 
+\item[Enlightening summary \#2:] The last two sections of the reading focus on the many contributions from Eratosthenes and Archimedes. Beyond his contributions to
+geography in the form of Geographica, Eratosthenes had a solution to Delian problem, and discovered the "sieve" method for finding prime numbers. To Plato's dismay,
+Eratosthenes' solution requires more than a compass and straight edge. A contemporary to Eratosthenes, Archimedes was an incredibly skilled engineer and mathematician.
+Archimedes approximated $\pi$ by a clever proof involving a regular polygon inscribed in a circle which is also inscribed in another regular polygon. Archimedes also used this similar idea and 
+applied it to the quadrature of parabolic segments, by continually inscribing triangles under the curve. 
+
+ 
+
+
+\item[Interesting:] I found Eratosthenes' Sieve super interesting. I'm actually familiar with it the algorithm, and have used it a few times for some coding projects but was unaware of the history behind it's
+discoverer. Beyond that, I thought his calculation of the earth's circumference was incredibly creative. And of course all the stories about Archimedes were great, especially the passage about him launching 
+a ship all by himself.    
+ 
+ 
+
+\item[Confusing:] At first a lot of the number theory results confused me. It took me a while to resurface the familiarity that I had when I was taking abstract algebra. I would also be 
+interested in see how Archimedes' method of quadrature performs against other methods of numerical integration. I'd imagine it performs comparably to Riemann, Trapezoid, or Simpsons rule quadrature. 
+
+
+\end{description}
+\end{document}
