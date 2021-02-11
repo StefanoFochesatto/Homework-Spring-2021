@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  1 FEB 2021 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  3 FEB 2021 20:18
 entering extended mode
 **"c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/HW#3.tex"
 ("c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/HW#3.tex"
@@ -679,19 +679,78 @@ Package pdftex.def Info: meanprop.png  used on input line 101.
 (pdftex.def)             Requested size: 143.09538pt x 143.09488pt.
  [1{C:/Users/StefanoFochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
- <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/meanprop.png>] [2] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2021\Math F316_History of Mathematics\HW#3.aux") ) 
+ <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/meanprop.png>]
+<conic.png, id=15, 348.55219pt x 348.55219pt>
+File: conic.png Graphic file (type png)
+<use conic.png>
+Package pdftex.def Info: conic.png  used on input line 141.
+(pdftex.def)             Requested size: 143.09538pt x 143.09346pt.
+ [2 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/conic.png>]
+<trisectangle.png, id=20, 866.48718pt x 487.06969pt>
+File: trisectangle.png Graphic file (type png)
+<use trisectangle.png>
+Package pdftex.def Info: trisectangle.png  used on input line 176.
+(pdftex.def)             Requested size: 433.62001pt x 243.74976pt.
+ [3 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/trisectangle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+<parallel.png, id=28, 339.51843pt x 190.46156pt>
+File: parallel.png Graphic file (type png)
+<use parallel.png>
+Package pdftex.def Info: parallel.png  used on input line 253.
+(pdftex.def)             Requested size: 216.81pt x 121.62468pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--275
+
+ []
+
+<rootn.png, id=29, 489.32813pt x 237.88875pt>
+File: rootn.png Graphic file (type png)
+<use rootn.png>
+Package pdftex.def Info: rootn.png  used on input line 276.
+(pdftex.def)             Requested size: 216.81pt x 105.4046pt.
+[5 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/parallel.png> <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/rootn.png>]
+<geogebraconstruction.png, id=36, 867.99281pt x 528.47438pt>
+File: geogebraconstruction.png Graphic file (type png)
+<use geogebraconstruction.png>
+Package pdftex.def Info: geogebraconstruction.png  used on input line 312.
+(pdftex.def)             Requested size: 390.25536pt x 237.60966pt.
+<geogebraconstruction1.png, id=37, 889.82437pt x 514.92375pt>
+File: geogebraconstruction1.png Graphic file (type png)
+<use geogebraconstruction1.png>
+Package pdftex.def Info: geogebraconstruction1.png  used on input line 315.
+(pdftex.def)             Requested size: 390.25536pt x 225.82858pt.
+ [6 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/geogebraconstruction.png>]
+<geogebraconstruction2.png, id=42, 851.43094pt x 522.45187pt>
+File: geogebraconstruction2.png Graphic file (type png)
+<use geogebraconstruction2.png>
+Package pdftex.def Info: geogebraconstruction2.png  used on input line 318.
+(pdftex.def)             Requested size: 390.25536pt x 239.4698pt.
+ [7 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/geogebraconstruction1.png> <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2021/Math F316_History of Mathematics/geogebraconstruction2.png>] [8] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2021\Math F316_History of Mathematics\HW#3.aux") ) 
 Here is how much of TeX's memory you used:
- 5871 strings out of 479618
- 80869 string characters out of 2859326
- 354600 words of memory out of 3000000
- 22936 multiletter control sequences out of 15000+200000
- 420968 words of font info for 74 fonts, out of 3000000 for 9000
+ 5918 strings out of 479618
+ 81749 string characters out of 2859326
+ 356600 words of memory out of 3000000
+ 22971 multiletter control sequences out of 15000+200000
+ 424976 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,10n,74p,364b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2021\Math F316_History of Mathematics\HW#3.pdf" (2 pages, 55456 bytes).
+ 68i,11n,74p,364b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsya.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2021\Math F316_History of Mathematics\HW#3.pdf" (8 pages, 288364 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
