@@ -2,8 +2,8 @@ PWD /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of M
 INPUT /usr/local/texlive/2019/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.tex
-OUTPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.log
+INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.tex
+OUTPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.log
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size12.clo
@@ -76,9 +76,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
-INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.aux
-INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.aux
-OUTPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.aux
+INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.aux
+INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.aux
+OUTPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.aux
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omltxmi.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omltxmi.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omstxsy.fd
@@ -167,7 +167,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
-OUTPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.pdf
+OUTPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
@@ -178,18 +178,21 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/txfonts/txr.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/txfonts/txmi.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxmi.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/txfonts/txr.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm
-INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.aux
+INPUT /Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.aux
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txex.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

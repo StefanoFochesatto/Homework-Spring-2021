@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  2 MAR 2021 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 MAR 2021 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.tex"
-(/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.tex
+**"/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.tex"
+(/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -544,8 +544,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box32
 \@float@everytoks=\toks31
 \@floatcapt=\box33
-) (/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.aux)
-\openout1 = `HW#6.aux'.
+) (/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.aux)
+\openout1 = `HW#7.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 86.
@@ -666,80 +666,70 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
-LaTeX Font Info:    Try loading font information for U+txsya on input line 93.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 96.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 93.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 96.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 93.
+LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 96.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 93.
+(Font)              scaled to size 11.52008pt on input line 96.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 8.64006pt on input line 93.
+(Font)              scaled to size 8.64006pt on input line 96.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 6.72005pt on input line 93.
-LaTeX Font Info:    Try loading font information for U+zavm on input line 93.
+(Font)              scaled to size 6.72005pt on input line 96.
+LaTeX Font Info:    Try loading font information for U+zavm on input line 96.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/arev/uzavm.fd
 File: uzavm.fd 2006/05/30 Fontinst v1.929 font definitions for U/zavm.
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 93.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 96.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 93.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 96.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+)
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+[1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 142--144
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
-
- []
-
-[3] [4] (/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.aux) ) 
+[2] [3] [4] [5] (/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.aux) ) 
 Here is how much of TeX's memory you used:
- 5429 strings out of 492616
- 72781 string characters out of 6129482
- 144591 words of memory out of 5000000
+ 5431 strings out of 492616
+ 72792 string characters out of 6129482
+ 145591 words of memory out of 5000000
  9213 multiletter control sequences out of 15000+600000
- 23870 words of font info for 65 fonts, out of 8000000 for 9000
+ 25186 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,360b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#6.pdf" (4 pages, 46637 bytes).
+ 41i,11n,43p,360b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/Users/stefanofochesatto/Desktop/Homework-Spring-2021/Math F316_History of Mathematics/HW#7.pdf" (5 pages, 52606 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
