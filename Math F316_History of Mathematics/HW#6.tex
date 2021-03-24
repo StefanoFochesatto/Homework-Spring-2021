@@ -89,57 +89,41 @@
 \textbf{Section 5.3}
 
 \begin{exercise}{21} Bhaskara, 1150. What number divided by 6 leaves a remainder of 5, divided by 5
-  leaves a remainder of 4, divided by 4 leaves a remainder of 3, and divided by 3 leaves a remainder of 2? \\
+  leaves a remainder of 4, divided by 4 leaves a remainder of 3, and divided by 3 leaves a remainder of 2? Written in our modern notation, solve for $N$ such that,
   \begin{align*}
     N &\cong 5 mod 6,\\
     N &\cong 4 mod 5,\\
     N &\cong 3 mod 4,\\
     N &\cong 2 mod 3.
   \end{align*}
-  \solution To solve this problem we must first compute the product $M$, of the moduli $m_i$,
+  \solution By definition we know that $6,5,4,3|(N + 1)$, since if we were to add one to $N$, the remainders would all increase by one 
+  and become the size of the moduli. Thus all solutions are a multiple of $6,5,4$ and $3$ minus $1$,
   \begin{equation*}
-    M = 6*5*4*3 = 360.
+    N = LCM(6,5,4,3)k - 1 
   \end{equation*}
-  The next step involves computing all $M_i$ such that 
-  \begin{equation*}
-    M_i = \frac{M}{m_i}.
-  \end{equation*}
-  Therefore we get the following, 
-\begin{align*}
-  M_1 = &\frac{360}{6} = 60, \\
-  M_2 = &\frac{360}{5} =72, \\
-  M_3 = &\frac{360}{4} =90, \\
-  M_4 = &\frac{360}{3} =120.
-\end{align*}
-Now we reduce each $M_i$ mod $m_i$, so find a $P_i$ such that, 
+  for some $k \in \Nats$.
+  I like the prime factorization method of finding the LCM so listing the prime factorization,
+  \begin{align*}
+    3 &= 3,\\
+    4 &= 2^2,\\
+    5 &= 5,\\
+    6 &= 2(3).\\
+  \end{align*} 
+Solving for the LCM as the product of the maximum occurrence of each prime, 
 \begin{equation*}
-  M_i = P_i \mod m_i.
+  LCM(6,5,4,3) = 2^2(3)(5) = 60.
 \end{equation*}
-Doing that we get,
-\begin{align*}
-  60 &\equiv 0 \mod 6.\\
-  72 &\equiv 2 \mod 5.\\
-  90 &\equiv 2 \mod 4.\\
-  120 &\equiv 0 \mod 3.
-\end{align*}
-Now we need to find one for each $P_i$ so solving for some $x_i$ that gives, 
+So we get that for all $k \in \Nats$,
 \begin{equation*}
-  P_ix_i \equiv 1 \mod m_i.
+  N = 60k - 1.
 \end{equation*}
- Doing this we get, 
-\begin{align*}
- (0)(1) &\equiv 1 \mod 6\\
- (2)(4) &\equiv 1 \mod 5\\
- (2)(5) &\equiv 1 \mod 4\\
- (0)(1) &\equiv 1 \mod 3
-\end{align*}
 \end{exercise}
 \vspace{.5in}
 
 
 \textbf{Section 5.5}
 
-\begin{exercise}{1} Solve the following quadratic equqitons with the araic method of complete the square.\\
+\begin{exercise}{1} Solve the following quadratic equations with the arabic method of complete the square.\\
   \begin{enumerate}
     \item $x^2 + 12x = 64$\\
     \solution First note that this is a type 4 problem with the form $ax^2 + bx = 2$. We complete the square by noting that, 
@@ -153,10 +137,14 @@ Now we need to find one for each $P_i$ so solving for some $x_i$ that gives,
       (x + 6)^2 &= 10^2.
     \end{align*}
     Therefore $x = 4, -12$. 
+
+
+
+
     \vspace{.25in}
 
     \item $3x^2 + 10x = 32$\\
-    \solution From the hint lets multiply both sides of the equation by 3 and and simplify the form of our equantio with a substitution of $y = 3x$, 
+    \solution From the hint lets multiply both sides of the equation by 3 and and simplify the form of our equation with a substitution of $y = 3x$, 
     \begin{align*}
       3x^2 + 10x &= 32,\\
       3(3x^2 + 10x) &= 3(32),\\
@@ -201,6 +189,13 @@ Now we need to find one for each $P_i$ so solving for some $x_i$ that gives,
       x^3 + b^2c &= b^2x.\\
     \end{align*}
     Therefore where the two conic sections intersect we get the solution to the cubic. 
+  \begin{center}
+    \includegraphics[width = .90\textwidth]{curve1.png}
+  \end{center}  
+
+
+
+
     \vspace{.25in}
 
 
@@ -221,27 +216,92 @@ Now we need to find one for each $P_i$ so solving for some $x_i$ that gives,
       x^3 + c &= ax^2.
     \end{align*}
     Thus where the two conic sections intersect we get the solution to the cubic. 
+
+    
+  \begin{center}
+    \includegraphics[width = .90\textwidth]{curve2.png}
+  \end{center}  
+
   \end{enumerate}
 \end{exercise}
 \vspace{.5in}
 
 \textbf{Additional Problems}
 
-\begin{exercise}{1}
+\begin{exercise}{1} Use GeoGebra to verify brahmagupta's result on cyclic quadrilaterals, that is if $\square ABCD$ is a cyclic 
+  quadrilateral (all points on a single circle), then
+  \begin{equation*}
+    Area(ABCD) = \sqrt{(s - a)(s - b)(s - c)(s - d)},
+  \end{equation*}
+  where $s = \frac{1}{2}(a+b+c+d)$. To verify, construct a working diagram in GeoGebra, measure the appropriate quantities, calculate the appropriate
+  calculations, and then show me two snapshots with different placements of $A,B,C,D$ on the circle where I can see the equal quantities.\\ 
+
+  \solution We begin our GeoGebra construction by drawing a circle with origin $O$ and then a line $DC$ which intersect the circle in two places like a chord.
+  From there we create two more lines, one that starts at $D$ and intersects the circle at $A$ and another that starts at $C$ intersecting the circle at 
+  $B$. Using the GeoGebra console we can display the lengths of the quadrilateral, calculate $s$, the area $l$, and Brahmagupta's result.
+  
+  \begin{center}
+    \includegraphics[width = \textwidth]{bram1.png}
+  \end{center}  
+  \vspace{.15in}
+
+
+  \begin{center}
+    \includegraphics[width = \textwidth]{bram2.png}
+  \end{center}  
+
 \end{exercise}
 \vspace{.5in}
 
 
-\begin{exercise}{2}
-\end{exercise}
+\begin{exercise}{2}Al-Khwarizimi gives the following rule for his sixth case, $bx + c = x^2$ (recall the "root"
+  or "number of roots" is the coefficients of the $x$ term and the "number" is the constant term):\\
+
+  \indent \textit{Halve the number of roots. Multiply this by itself. Add this square to the number. Extract the square root. Add this to half of the 
+  number of roots. that is the solution.}\\
+
+  \begin{enumerate}
+    \item Translate this into a formula using $x, b, c$.\\
+    \solution Following the description we know that the solution of the quadratic is $x$ and we will start by halving the number
+    of roots $(b)$ and then squaring that result,
+    \begin{equation*}
+      x = (\frac{b}{2})^2.
+    \end{equation*}
+    Adding this result to the number $(c)$ and then square rooting we get,
+    \begin{equation*}
+      x = \sqrt{(\frac{b}{2})^2 + c}.
+    \end{equation*}
+    Finally we add half the number of roots $(b)$,
+    \begin{equation*}
+      x = \sqrt{(\frac{b}{2})^2 + c} + \frac{b}{2}.
+    \end{equation*}  
+    \vspace{.25in}
+
+    \item Give a geometric argument for its validity using the following diagram where $c$ is the area of the gray rectangle
+    $ABCD$ , $AE = EF = x$, $FC = b$, $M$ is the midpoint of $FC$, and every angle is orthogonal.\\
+    \begin{center}
+      \includegraphics[width = .75\textwidth]{quadratic.png}
+    \end{center}  
+    \solution First note that $area(\square RCMS) = (\frac{b}{2})^2$, and that $\square DAPQ \cong \square TQRS$(must show $DQ = \frac{b}{2}$ or $TS = x - b$).
+    So finally we ge that the $area(\square PBMT) = c + (\frac{b}{2})^2$ where the side length is $x - \frac{b}{2}$. So,
+    \begin{equation*}
+      \sqrt{(\frac{b}{2})^2 + c} + \frac{b}{2} = \sqrt{area(\square PBMT)} + \frac{b}{2} = x - \frac{b}{2} + \frac{b}{2} = x.
+    \end{equation*}  
+
+
+  \end{enumerate}
+
+
+\end{exercise} 
 \vspace{.5in}
 
 
 \textbf{Reflection}
 \begin{enumerate}
-  \item 
+  \item I found the first problem was difficult to do in anyway that was explained in the book. I tried the "finding one" method but it doesn't
+  work if your moduli are not relatively prime. I ended up solving it with a more modern method. \\
   
-  \item 
+  \item I don't see how we can show that  $DQ = \frac{b}{2}$ or $TS = x - b$ in the last problem, but I definitely see how you could get the formula from the diagram. 
 
 \end{enumerate}
 

@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{hieroglf}
+
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\IRats}{\ensuremath{\mathbb I}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+
+\doclabel{Math F316}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}% DATE READING SENTENCES ARE DUE GOES HERE
+
+
+%%%% Main document starts here.
+
+\begin{document}
+
+\section*{5.3-5.5 Chinese Mathematics}
+
+\begin{description}
+
+\item[Enlightening Summary \#1:] Our reading into the History of Chinese Mathematics begins with outlining the shared knowledge
+between the Hindu and Chinese. The section in 5.3 describes the methods the Chinese used to solve indeterminate systems 
+of linear and quadratic equations.\\
+
+\item[Enlightening Summary \#2:] Section 5.5 more into detail on the state of Chinese Mathematics. Throughout the section it 
+is emphasized that Chinese math was profoundly algebraic and applied, in some cases the antithesis of the Greeks. We are introduced to the
+The Nine Chapters of Mathematical Art, which is touted as the oldest textbook on arithmetic in existence. The book's intended use was for 
+surveyors and engineers with problems that focused on finding areas, volumes, solving systems of equations, and rules for calculating interest.
+We saw another sweet proof for approximating $\pi$, and what looks to be the beginnings of linear algebra in an example where a matrix is reduced to row echelon form.
+The section ends with innovations in counting rod notation, binomial expansion, Horner's Method, and the introduction of western mathematics aided by the Jesuit missionary.\\   
+
+
+\item[Interesting:] I was really surprised when I saw Horner's Method was discovered so early on especially because centuries later its still 
+the optimal way of evaluating a polynomial.  
+
+
+\item[Confusing:] Its seems from the example on page 257 that the Chinese were solving linear systems in the form of a matrix. I feel like solving systems like this would eventually lead to a situataion where 
+you have simplified a row to all zeros which I think might lead to the infinite solutions conclusion. However in the section 
+before it states that Sun-Tsu might not have been aware that there were infinitely many solutions to indeterminate problems. Is it possible that maybe they didn't 
+fully understand the properties of zero?  
+
+
+\end{description}
+\end{document}
