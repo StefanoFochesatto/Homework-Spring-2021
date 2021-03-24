@@ -1,0 +1,315 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{enumerate}
+\usepackage{hieroglf}
+\usepackage{oands}
+\usepackage{arevmath}
+\usepackage{relsize}
+\usepackage{times,txfonts}
+\usepackage{graphicx}
+\usepackage{float}
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\doclabel{Math 316: HW 7}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}
+
+\begin{document}
+
+
+\textbf{Section 6.2}
+
+\begin{exercise}{2} A merchant doing business in Lucca doubled his money there and then spent 12 denarii. 
+  On leaving, he went to Florence, where he also doubled his money and spent 12 denarii. 
+  Returning home to Pisa, he there doubled his money and again spent 12 denarii, nothing remaining. 
+  How much did he have in the beginning?\\
+  \solution First let's convert the word problem into an equation with our modern notation,
+  \begin{equation*}
+    2(2(2x - 12)-12) = 0.
+  \end{equation*}
+  Expanding the equation,
+  \begin{align*}
+    2(2(2x - 12)-12) &= 0,\\
+    2(4x - 36) &= 0,\\
+    8x - 72 &= 0,\\
+    8x &= 72,\\
+    x &= 9.
+  \end{align*}
+
+\end{exercise}
+\vspace{.5in}
+
+\begin{exercise}{4} Given the squares of three successive odd numbers, show that the largest square exceeds
+   the middle square by eight more than the middle square exceeds the smallest.\\
+   \solution 
+   First note that the three successive odd numbers have the form, 
+   \begin{equation*}
+     (x)^2, (x+2)^2, (x+4)^2.
+   \end{equation*}
+   Consider the middle square, 
+   \begin{equation*}
+     (x+2)^2 = x^2 + 4x + 4.
+   \end{equation*}
+   Thus the middle square exceeds the smallest by $4x + 4$. Now consider the largest square,
+   \begin{align*}
+    (x+4)^2 &= x^2 + 8x + 16,\\ 
+            &= x^2 + 4x + 4x + 4 + 12,\\
+            &= x^2 + 4x + 4 + 4x + 12,\\ 
+            &= (x+2)^2 + 4x + 12.
+   \end{align*}
+   Thus the largest square exceeds the middle square by $4x + 12$. Now we can calculate the difference,
+   \begin{equation*}
+    4x + 12 - (4x + 4) = 8.
+   \end{equation*}
+   Thus the largest square exceeds the middle square by eight more than the middle square exceeds the smallest. 
+   
+\end{exercise}
+\vspace{.5in}
+
+\begin{exercise}{7} Fibonacci proved that if the sum of two consecutive integers is a square (that is if $n + (n-1) = u^2$ for some $u$), 
+  then the square of the larger integer will equal the sum of two nonzero squares. Verify this 
+  result and furnish several numerical examples.\\
+  \solution Suppose that $n + (n-1) = u^2$ for some $u$. Through some algebra we get that, $2n - 1 = u^2$. Expanding $(n-1)^2$,
+  \begin{align*}
+    (n-1)^2 &= n^2 - 2n + 1,\\
+    (n-1)^2 + 2n - 1 &= n^2,\\
+    (n-1)^2 + u^2 &= n^2.
+  \end{align*}
+Thus we have shown that if the sum of two consecutive integers is square then the square of the larger integer is the sum of two nonzero squares. 
+For and example consider $4,5$ note $4 + 5 = 3^2$ and $5^2 = 4^2 + 3^2$. Now consider $(12,13)$ note that $12 + 13 = 5^2$ and $13^2 = 5^2 + 12^2$.
+Finally consider $(60,61)$, note that $60 + 61 = 11^2$ and $61^2 = 11^2 + 60^2$.
+\end{exercise}
+\vspace{.5in}
+
+
+
+\begin{exercise}{17} Solve the following equation for $x$ and $y:$.
+  \begin{equation*}
+    a/x = y/b,
+  \end{equation*} 
+  \begin{equation*}
+    x/y = c.
+  \end{equation*} 
+  For example, if the first and fourth term of a given ratio are 18 and 2, and the ratio of the second and third equals 4, 
+  what are the second and third term.\\
+  \solution Solving the second equation for $x$,
+  \begin{equation*}
+    x = cy.
+  \end{equation*}
+  Substituting into the first equation,
+  \begin{align*}
+    y/b &= a/(cy),\\
+    y^2/b &= a/c,\\
+    y^2 &= ab/c,\\
+    y &= \sqrt{(ab)/c}.\\
+  \end{align*}
+  Now substituting back into the second equation we get,
+  \begin{equation*}
+    x = cy = c(\sqrt{(ab)/c}).
+  \end{equation*}
+\end{exercise}
+\vspace{.5in}
+
+
+
+\textbf{Section 6.3}
+
+\begin{exercise}{2.a} Show that the sum of the first $n$ Fibonacci numbers with odd indices is 
+  given by the formula, 
+  \begin{equation*}
+    F_1 + F_3 + F_5 + \dots + F_{2n - 1} = F{2n}.
+  \end{equation*}
+  \solution Consider $n = 1$, then we by definition get that, 
+  \begin{equation*}
+    F{2(1)} = F_{2} = 1 = F_{1}
+  \end{equation*}
+  Suppose that for some $n$,
+  \begin{equation*}
+    F_1 + F_3 + F_5 + \dots + F_{2n - 1} = F{2n}.
+  \end{equation*}
+  Now consider $F_{2(n+1)}$. By the definition of the Fibonacci sequence we know that,
+  \begin{equation*}
+    F_{2(n+1)} = F_{2n+2} = F_{2n + 1} + F_{2n}
+  \end{equation*}
+  Substituting the induction hypothesis,
+  \begin{equation*}
+    F_{2(n+1)} = F_{2n+2} = F_{2n + 1} + F_{2n - 1} + \dots + F_5 + F_3 + F_1.
+  \end{equation*}
+  \begin{equation*}
+    F_{2(n+1)} = F_{2(n+1) - 1} + F_{2(n+1) - 2} + \dots + F_5 + F_3 + F_1.
+  \end{equation*}
+  Thus for all $n$ we know that,
+  \begin{equation*}
+    F_1 + F_3 + F_5 + \dots + F_{2n - 1} = F{2n}.
+  \end{equation*}
+\end{exercise}
+\vspace{.5in}
+
+
+\textbf{Section 7.1}
+
+\begin{exercise}{1.a} Finds all three roots of each of the following cubic equations by first reducing them to cubics
+  that lack a term in $x^2$.
+  \begin{equation*}
+    x^3 + 11x = 6x^2 + 6. 
+  \end{equation*} 
+  \solution To solve this equation using Cardano's method, let's first get it into standard form,
+  \begin{equation*}
+    x^3 -6x^2 + 11x - 6 = 0. 
+  \end{equation*}
+  Now we make the substitution, $x = y + 6/3$ which give us the following, 
+\begin{align*}
+  y^3 + (11 - \frac{(-6)^2}{3})y + (\frac{2(-6)^3}{27} - \frac{(-6)11}{3} - 6) &= 0\\
+  y^3  - y + (0) &= 0\\
+  y^3  - y &= 0\\
+  (y)(y^2  - 1) &= 0
+\end{align*}
+So $y = 0,-1,1$ and solving for $x$ we get that $x = 2, 1, 3$.
+\end{exercise}
+\vspace{.5in}
+
+\begin{exercise}{3.b} Using Cardan's formula obtain one root of the following cubic equation,
+  \begin{equation*}
+    x^3 + 15x = 6x^2 + 18
+  \end{equation*}
+  \solution First we find the equation in standard form,
+  \begin{equation*}
+    x^3 - 6x^2 + 15x - 18 = 0.
+  \end{equation*}
+  Now we apply the substitution, $x = y + 6/3$ to get rid of the $x^2$ term, 
+  \begin{align*}
+    y^3 + (15 - \frac{(-6)^2}{3})y + (\frac{2(-6)^3}{27} - \frac{(-6)15}{3} - 18) &= 0,\\
+    y^3 + (3)y + (-4) &= 0,\\
+    y^3 + 3y + &= 4.
+  \end{align*}
+ Now we know that $p = 3$ and $q = 4$ we can apply Cardan's formula to find a root $y$, 
+ \begin{equation*}
+   y = \sqrt[3]{\frac{4}{2} + \sqrt{\frac{4^2}{4} + \frac{3^3}{27}}} - \sqrt[3]{-\frac{4}{2} + \sqrt{\frac{4^2}{4} + \frac{3^3}{27}}} = 1
+ \end{equation*}
+ Thus we get a root $x = 3$.
+
+\end{exercise}
+\vspace{.5in}
+
+\begin{exercise}{12} The following method of Viera is useful in solving the reduced cubic
+  $x^3 + ax = b$. By substitution of $x = a/3y - y$, the given equation becomes $y^6 + by^3 - a^3/27 = 0$,
+  a quadratic in $y^3$. By the quadratic formula, 
+  \begin{equation*}
+    y^3 = \frac{1}{2}(-b \pm \sqrt{b^2 + \frac{4a^3}{27}}).
+  \end{equation*}
+  from which $y$ and then $x$ can be determined. Use this method to find a root of the cubics $x^3 + 81x = 702$
+  and $x^3 + 6x^2 + 18x + 13 = 0$.
+  \solution Note that the first cubic is already in the required form, so applying the substitution $x = 81/3y - y$ yields,
+  \begin{equation*}
+    y^6 + 702y^3 - \frac{81^3}{27} = 0.
+  \end{equation*}
+  Applying the quadratic formula yields, 
+  \begin{equation*}
+    y^3 = \frac{1}{2}(-702 \pm \sqrt{(702)^2 + \frac{4(81)^3}{27}}) = 27,-729
+  \end{equation*}
+  Let $y = 3$ and finally substituting back into $x = 81/3y - y$ we get that $x = 6$. 
+
+  \vspace{.25in}
+
+  For the second equation let's start by substituting, $x = y - 6/3$ which gives us, 
+  \begin{align*}
+    y^3 + (18 - \frac{(6)^2}{3})y + (\frac{2(6)^3}{27} - \frac{(6)18}{3} + 13) &= 0,\\
+    y^3 + 6y -7 &= 0,\\
+    y^3 + 6y &= 7.
+  \end{align*}
+  Now applying the Viera substitution we know that $y = 6/3z - z$, and we get, 
+  \begin{equation*}
+    z^6 + 7z^3 - \frac{6^3}{27} = 0.
+  \end{equation*}
+  Now applying the quadratic formula we get that, 
+  \begin{equation*}
+    z^3 = \frac{1}{2}(-7 \pm \sqrt{(7)^2 + \frac{4(6)^3}{27}}) = 1, -8
+  \end{equation*}
+  Let $z = 1$ and by substitution into $y = 6/3z - z$ we get $y = 1$ and by another substitution into 
+  $x = y - 6/3$ we finally get a root of $x = -1$
+\end{exercise}
+\vspace{.5in}
+
+
+
+\textbf{Reflection}
+\begin{enumerate}
+  \item The last few problems felt really tedious and roundabout. Especially the last one, why would you use the Viera substitution when 
+  you could just use Cardan's formula?
+  \item I know I could write a better induction proof. 
+\end{enumerate}
+
+
+
+
+
+\end{document}
